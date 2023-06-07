@@ -4,52 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            display: grid;
-            grid-template-columns: repeat(7,75px);
-            gap: 6px;
-            background-color: black;
-            color: white;
-        }
-        month{
-            grid-column: span 7;
-            background-color: blue;
-            height: 30px;
-            width: 100%;
-            border-radius: 8px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        trailer, leader, day{
-            border-radius: 8px;
-            height: 60px;
-            width: 100%;
-        }
-        leader, trailer{
-            background-color: rgb(60,60,60);
-        }
-        leader{
-            grid-column: span 3;
-        }
-        trailer{
-            grid-column: span 4;
-        }
-        day{
-            box-sizing: border-box;
-            text-align: right;
-            padding: 2px 4px 0px;
-            background-color: lightblue;
-
-        }
-        #valintine{
-            background-color: red;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Calendar</title>
 </head>
-<body>
+<body class="background-calendar">
+    
     <month>February 2023</month>
     <leader></leader>
     <day>1</day>
@@ -81,6 +40,15 @@
     <day>27</day>
     <day>28</day>
     <trailer></trailer>
+
+    <main class="flex-container" id="bottom"> 
+        <div><a class="text" href="index.html" title="Home" >Home</a></div>
+        <div><a class="text" href="calendar.html" title="Calendar">Calendar</a></div>
+    </main>
+
+    <aside id="bottom-right">
+        <img class="geco" src="./images/Logo.jpg" alt="Callejas"></li>
+    </aside>
 
 </body>
 </html>
